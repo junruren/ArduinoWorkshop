@@ -40,9 +40,8 @@ int LED=9;
 void setup() {
   // put your setup code here, to run once:
   /* Change LED_BUILTIN to pin #*/
-  while (! Serial); // Wait until Serial is ready - Leonardo
-  Serial.println("Enter LED pin number");
   Serial.begin(9600);
+  Serial.println("Enter LED pin number");
   // LED = Serial.parseInt(); USER CHOOSE
   pinMode(LED, OUTPUT);
 }
